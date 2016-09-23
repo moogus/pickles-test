@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"[]>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>GAC (HEFT) - Register interest ineligibility banner logged out (WEBT - 2022)</title>
+    <link rel="stylesheet" href="../css/master.css" type="text/css" />
+    <link rel="stylesheet" href="../css/print.css" type="text/css" media="print" />
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script src="../js/scripts.js" type="text/javascript"></script>
+    <script type="text/javascript">
+$(document).ready(function() {
+  initializeToc();
+});
+</script>
+    <!-- We are using Font Awesome - http://fortawesome.github.com/Font-Awesome - licensed under CC BY 3.0 -->
+  </head>
+  <body>
+    <div id="container">
+      <div id="top" />
+      <div id="toc">
+        <p class="tocCollapser" title="Collapse Table of Content">«</p>
+        <ul class="features">
+          <li class="file" id="root">
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <div class="directory">
+              <a href="../errors/index.html">errors</a>
+            </div>
+            <ul class="features">
+              <li class="file">
+                <a href="../errors/gaq-conversion-register-interest.html">Error Scenarios GAQ - Register Interest (WEBT - 2402)</a>
+              </li>
+              <li class="file">
+                <a href="../errors/tc-register-interest.html">Error Scenarios Tariff Check - Register Interest (WEBT - 2397)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="directory">
+              <a href="./index.html">gaq</a>
+            </div>
+            <ul class="features">
+              <li class="file">
+                <a href="gaq-heft-logged-in.html">GAC (HEFT) - Register interest ineligibility banner logged in (WEBT - 2204)</a>
+              </li>
+              <li class="file">
+                <span class="current">GAC (HEFT) - Register interest ineligibility banner logged out (WEBT - 2022)</span>
+              </li>
+              <li class="file">
+                <a href="gaq-register-interest-existing-customers.html">GAQ - Existing dual fuel customer registers interest (WEBT-2326)</a>
+              </li>
+              <li class="file">
+                <a href="gaq-register-interest-smart-logged-in-dual-fuel.html">GAQ - Logged in dual fuel customer registers interest for smart (WEBT - 2326)</a>
+              </li>
+              <li class="file">
+                <a href="gaq-register-interest-smart-logged-in-service-only.html">GAQ - Logged in services only customer registers interest for smart</a>
+              </li>
+              <li class="file">
+                <a href="gaq-register-interest-smart-logged-out.html">GAQ - Logged out dual fuel customer registers interest for smart</a>
+              </li>
+              <li class="file">
+                <a href="gaq-premise-ineligible-banner-logged-in.html">GAQ - premise ineligibility banner (WEBT - 2021)</a>
+              </li>
+              <li class="file">
+                <a href="gaq-add-fuel-logged-in.html">Logged in Customer additional fuel acquision (WEBT - 2403)</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="directory">
+              <a href="../service-order/index.html">serviceorder</a>
+            </div>
+            <ul class="features">
+              <li class="file">
+                <a href="../service-order/service-order.html">Service Order</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="directory">
+              <a href="../tariff-check/index.html">tariffcheck</a>
+            </div>
+            <ul class="features">
+              <li class="file">
+                <a href="../tariff-check/tc-smicops-vunerable-information.html">Logged in Customer can add vunerable information (WEBT - 2168)</a>
+              </li>
+              <li class="file">
+                <a href="../tariff-check/tc-heft.html">Tariff Check - HEFT Tariff (WEBT - 2204)</a>
+              </li>
+              <li class="file">
+                <a href="../tariff-check/tc-register-interest-smart-logged-in-dual-fuel.html">Tariff Check - Logged in dual fuel customer registers interest for smart (WEBT - 2325)</a>
+              </li>
+              <li class="file">
+                <a href="../tariff-check/tc-premise-ineligible-banner-logged-in.html">Tariff Check - premise ineligibility banner logged in (WEBT - 2021)</a>
+              </li>
+              <li class="file">
+                <a href="../tariff-check/tariff-check.html">Tariff Check (General)</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="feature">
+        <h1>GAC (HEFT) - Register interest ineligibility banner logged out (WEBT - 2022)</h1>
+        <ul id="scenarios">
+          <li class="scenario">
+            <div class="scenario-heading">
+              <h2></h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>a logged out website visitor</li>
+                <li class="step">
+                  <span class="keyword">And </span>the website visitor is on the details page</li>
+                <li class="step">
+                  <span class="keyword">And </span>the website visitor is successfully attempting to buy dual fuel</li>
+              </ul>
+            </div>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="website-visitor-existing-property-completes-passing-survey">
+              <h2>Website visitor existing property completes passing survey</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>the website visitor completes passing survey</li>
+                <li class="step">
+                  <span class="keyword">When </span>the website visitor clicks the get a quote button</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the website visitor should not see the ineligible banner</li>
+                <li class="step">
+                  <span class="keyword">And </span>the website visitor should see the HEFT tariff</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('website-visitor-existing-property-completes-passing-survey')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="website-visitor-existing-property-completes-failing-survey-due-to-having-smart-meters">
+              <h2>Website visitor existing property completes failing survey due to having smart meters</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>the website visitor completes failing survey as they have smart meters</li>
+                <li class="step">
+                  <span class="keyword">When </span>the website visitor clicks the get a quote button</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the website visitor sees the ineligible banner</li>
+                <li class="step">
+                  <span class="keyword">And </span>the website visitor should not see the HEFT tariff</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('website-visitor-existing-property-completes-failing-survey-due-to-having-smart-meters')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="website-visitor-existing-property-completes-failing-survey-as-their-meters-are-not-accessible">
+              <h2>Website visitor existing property completes failing survey as their meters are not accessible</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>the website visitor completes failing survey as their meters are not accessible</li>
+                <li class="step">
+                  <span class="keyword">When </span>the website visitor clicks the get a quote button</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the website visitor sees the ineligible banner</li>
+                <li class="step">
+                  <span class="keyword">And </span>the website visitor should not see the HEFT tariff</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('website-visitor-existing-property-completes-failing-survey-as-their-meters-are-not-accessible')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+          <li class="scenario">
+            <div class="scenario-heading" id="website-visitor-sees-ineligibility-banner-after-dual-quote-when-changing-to-single-gas-fuel-product">
+              <h2>Website visitor sees ineligibility banner after dual quote when changing to single gas fuel product</h2>
+            </div>
+            <div class="steps">
+              <ul>
+                <li class="step">
+                  <span class="keyword">Given </span>the website visitor completes failing survey as their meters are not accessible</li>
+                <li class="step">
+                  <span class="keyword">And </span>the website visitor has clicked the get a quote button</li>
+                <li class="step">
+                  <span class="keyword">When </span>the website visitor chooses gas single fuel account</li>
+                <li class="step">
+                  <span class="keyword">Then </span>the website visitor sees the ineligible banner</li>
+                <li class="step">
+                  <span class="keyword">And </span>the website visitor should not see the HEFT tariff</li>
+              </ul>
+            </div>
+            <a class="scenario-link" href="javascript:showImageLink('website-visitor-sees-ineligibility-banner-after-dual-quote-when-changing-to-single-gas-fuel-product')" title="Copy scenario link to clipboard.">
+              <i class="icon-link"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <p>Generated on: 23 September 2016 08:33:45</p>
+        <p>Produced by Pickles, version 2.8.2.0</p>
+      </div>
+    </div>
+  </body>
+</html>
